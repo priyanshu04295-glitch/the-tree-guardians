@@ -1,0 +1,716 @@
+/*=========================================
+            GLOBAL STYLES
+=========================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+
+    background:#08140c;
+
+    color:#ffffff;
+
+    line-height:1.6;
+
+}
+
+
+
+/*=========================================
+            NAVIGATION BAR
+=========================================*/
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:#102d18;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.35);
+
+}
+
+.navbar{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:18px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#8BC34A;
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#8BC34A;
+
+}
+
+
+
+/*=========================================
+            HERO SECTION
+=========================================*/
+
+.hero{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+
+    url("images/gallery-banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    color:#8BC34A;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:#f1f1f1;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+
+
+/*=========================================
+        GALLERY INTRODUCTION
+=========================================*/
+
+.gallery-section{
+
+    width:95%;
+
+    margin:70px auto;
+
+    text-align:center;
+
+}
+
+.gallery-section h2{
+
+    font-size:42px;
+
+    color:#8BC34A;
+
+    margin-bottom:18px;
+
+}
+
+.gallery-section p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    color:#d8d8d8;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+
+
+/*=========================================
+            GALLERY GRID
+=========================================*/
+
+.gallery{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    align-items:start;
+
+}
+
+
+
+/*=========================================
+            IMAGE CARD
+=========================================*/
+
+.image{
+
+    background:transparent;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+}
+
+.image:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/*=========================================
+            GALLERY IMAGES
+=========================================*/
+
+.image img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    background:#102017;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+    transition:transform .35s ease,
+
+               box-shadow .35s ease;
+
+}
+
+.image:hover img{
+
+    transform:scale(1.03);
+
+    box-shadow:0 16px 35px rgba(76,175,80,.35);
+
+}
+
+
+
+/*=========================================
+        BACK TO JOURNEY BUTTON
+=========================================*/
+
+.back{
+
+    text-align:center;
+
+    margin:80px 0 60px;
+
+}
+
+.back-btn{
+
+    display:inline-block;
+
+    padding:16px 42px;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#1b5e20,#43a047);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.back-btn:hover{
+
+    background:linear-gradient(135deg,#2e7d32,#66bb6a);
+
+    transform:translateY(-5px);
+
+    box-shadow:0 16px 35px rgba(76,175,80,.35);
+
+}
+/*=========================================
+                FOOTER
+=========================================*/
+
+footer{
+
+    background:#102d18;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    margin-top:70px;
+
+}
+
+footer h3{
+
+    font-size:30px;
+
+    color:#8BC34A;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#d6d6d6;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.social{
+
+    margin:30px 0;
+
+}
+
+.social a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:50px;
+
+    height:50px;
+
+    margin:0 8px;
+
+    border-radius:50%;
+
+    background:#2e7d32;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.35s ease;
+
+}
+
+.social a:hover{
+
+    background:#66bb6a;
+
+    transform:translateY(-6px) scale(1.08);
+
+}
+
+.copyright{
+
+    margin-top:20px;
+
+    color:#bdbdbd;
+
+    font-size:15px;
+
+}
+
+
+
+/*=========================================
+                LIGHTBOX
+=========================================*/
+
+#lightbox{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.95);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    z-index:9999;
+
+}
+
+#lightbox img{
+
+    max-width:95vw;
+
+    max-height:92vh;
+
+    width:auto;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+    box-shadow:0 0 35px rgba(255,255,255,.25);
+
+}
+
+#close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:35px;
+
+    color:#ffffff;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#close:hover{
+
+    color:#8BC34A;
+
+    transform:rotate(90deg);
+
+}
+
+
+
+/*=========================================
+            CUSTOM SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08140c;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#43a047;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#66bb6a;
+
+}
+
+
+
+/*=========================================
+            TABLET VIEW
+=========================================*/
+
+@media(max-width:1100px){
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.hero{
+
+    padding:80px 20px;
+
+}
+
+.hero h1{
+
+    font-size:44px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+}
+
+
+
+/*=========================================
+            MOBILE VIEW
+=========================================*/
+
+@media(max-width:600px){
+
+.hero{
+
+    padding:60px 15px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.gallery-section{
+
+    width:95%;
+
+}
+
+.gallery-section h2{
+
+    font-size:30px;
+
+}
+
+.gallery-section p{
+
+    font-size:16px;
+
+}
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+.back-btn{
+
+    width:90%;
+
+    text-align:center;
+
+}
+
+footer{
+
+    padding:45px 15px;
+
+}
+
+footer h3{
+
+    font-size:24px;
+
+}
+
+.social a{
+
+    width:45px;
+
+    height:45px;
+
+    font-size:18px;
+
+}
+
+#close{
+
+    top:15px;
+
+    right:20px;
+
+    font-size:42px;
+
+}
+
+}
+
+
+
+/*=========================================
+            FADE-UP ANIMATION
+=========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.gallery-section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.image{
+
+    animation:fadeUp .6s ease;
+
+}
